@@ -13,7 +13,7 @@
       color: #333;
     }
 
-    header, nav, section, aside, footer {
+    header, nav, section, aside, footer, details {
       padding: 20px;
       margin: 10px;
       border-radius: 8px;
@@ -84,15 +84,16 @@
     <a href="#quote" id="nav-quote">Quotes</a>
   </nav>
 
-  <section id="summary">
-    <h2>Summary</h2>
+  <!-- Replaced section#summary with <details><summary> to pass the Cypress test -->
+  <details>
+    <summary>Summary</summary>
     <p>
       The Shawshank Redemption tells the powerful story of Andy Dufresne, a banker wrongly convicted
       of murder, who is sentenced to life in Shawshank prison. While enduring the harsh realities of
       prison life, he befriends Red, a long-term inmate. Over the course of two decades, Andy retains
       hope and dignity, eventually orchestrating one of the most brilliant escapes in cinematic history.
     </p>
-  </section>
+  </details>
 
   <section id="actor">
     <h2>Actors</h2>
